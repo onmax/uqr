@@ -89,11 +89,20 @@ export interface QrCodeGenerateResult {
 }
 
 export interface QrCodeGenerateInvertableOptions extends QrCodeGenerateOptions {
+  /**
+   * Adds the option to invert the colour scheme of the QR code in addition to the standard options.
+   */
   invert?: boolean
 }
 
 export interface QrCodeGenerateUnicodeOptions extends QrCodeGenerateInvertableOptions {
+  /**
+   * Character used to represent white modules in the QR code.
+   */
   whiteChar?: string
+  /**
+   * Character used to represent black modules in the QR code.
+   */
   blackChar?: string
 }
 
